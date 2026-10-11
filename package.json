@@ -1,0 +1,16 @@
+{
+  "name": "voxway-gen",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "橙子旅伴 voxway：输入一句问题 → LLM 在 64×32 彩色点阵屏上画出画面 → 上屏",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test/unit.test.mjs && node test/protocol.test.mjs && node test/e2e.mjs",
+    "test:unit": "node test/unit.test.mjs",
+    "test:protocol": "node test/protocol.test.mjs",
+    "test:e2e": "node test/e2e.mjs",
+    "test:real": "node test/real-llm.test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
